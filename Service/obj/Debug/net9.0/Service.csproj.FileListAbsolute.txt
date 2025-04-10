@@ -1,0 +1,15 @@
+E:\MyProjects\StructureAppV1.0\Service\bin\Debug\net9.0\Service.deps.json
+E:\MyProjects\StructureAppV1.0\Service\bin\Debug\net9.0\Service.dll
+E:\MyProjects\StructureAppV1.0\Service\bin\Debug\net9.0\Service.pdb
+E:\MyProjects\StructureAppV1.0\Service\bin\Debug\net9.0\Domain.dll
+E:\MyProjects\StructureAppV1.0\Service\bin\Debug\net9.0\Domain.pdb
+E:\MyProjects\StructureAppV1.0\Service\obj\Debug\net9.0\Service.csproj.AssemblyReference.cache
+E:\MyProjects\StructureAppV1.0\Service\obj\Debug\net9.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+E:\MyProjects\StructureAppV1.0\Service\obj\Debug\net9.0\Service.AssemblyInfoInputs.cache
+E:\MyProjects\StructureAppV1.0\Service\obj\Debug\net9.0\Service.AssemblyInfo.cs
+E:\MyProjects\StructureAppV1.0\Service\obj\Debug\net9.0\Service.csproj.CoreCompileInputs.cache
+E:\MyProjects\StructureAppV1.0\Service\obj\Debug\net9.0\Service.csproj.Up2Date
+E:\MyProjects\StructureAppV1.0\Service\obj\Debug\net9.0\Service.dll
+E:\MyProjects\StructureAppV1.0\Service\obj\Debug\net9.0\refint\Service.dll
+E:\MyProjects\StructureAppV1.0\Service\obj\Debug\net9.0\Service.pdb
+E:\MyProjects\StructureAppV1.0\Service\obj\Debug\net9.0\ref\Service.dll

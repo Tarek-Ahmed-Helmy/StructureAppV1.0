@@ -1,0 +1,32 @@
+﻿@using Presentation.ViewModels
+@model EmployeeVM
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+<div>
+    <h4>Employee</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">First Name</dt>
+        <dd class="col-sm-10">@Model.FirstName</dd>
+        <dt class="col-sm-2">Last Name</dt>
+        <dd class="col-sm-10">@Model.LastName</dd>
+        <dt class="col-sm-2">Age</dt>
+        <dd class="col-sm-10">@Model.Age</dd>
+        <dt class="col-sm-2">Salary</dt>
+        <dd class="col-sm-10">@Model.Salary</dd>
+        <dt class="col-sm-2">Title</dt>
+        <dd class="col-sm-10">@Model.Title</dd>
+        <dt class="col-sm-2">Department</dt>
+        <dd class="col-sm-10">@Model.DepartmentName</dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn-dark">Back to List</a>
+    </form>
+</div>

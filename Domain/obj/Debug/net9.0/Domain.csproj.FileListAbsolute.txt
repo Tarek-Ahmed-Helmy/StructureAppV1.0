@@ -1,0 +1,12 @@
+E:\MyProjects\StructureAppV1.0\Domain\bin\Debug\net9.0\Domain.deps.json
+E:\MyProjects\StructureAppV1.0\Domain\bin\Debug\net9.0\Domain.dll
+E:\MyProjects\StructureAppV1.0\Domain\bin\Debug\net9.0\Domain.pdb
+E:\MyProjects\StructureAppV1.0\Domain\obj\Debug\net9.0\Domain.csproj.AssemblyReference.cache
+E:\MyProjects\StructureAppV1.0\Domain\obj\Debug\net9.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\MyProjects\StructureAppV1.0\Domain\obj\Debug\net9.0\Domain.AssemblyInfoInputs.cache
+E:\MyProjects\StructureAppV1.0\Domain\obj\Debug\net9.0\Domain.AssemblyInfo.cs
+E:\MyProjects\StructureAppV1.0\Domain\obj\Debug\net9.0\Domain.csproj.CoreCompileInputs.cache
+E:\MyProjects\StructureAppV1.0\Domain\obj\Debug\net9.0\Domain.dll
+E:\MyProjects\StructureAppV1.0\Domain\obj\Debug\net9.0\refint\Domain.dll
+E:\MyProjects\StructureAppV1.0\Domain\obj\Debug\net9.0\Domain.pdb
+E:\MyProjects\StructureAppV1.0\Domain\obj\Debug\net9.0\ref\Domain.dll

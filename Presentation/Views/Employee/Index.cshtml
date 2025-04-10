@@ -1,0 +1,69 @@
+﻿@model IEnumerable<EmployeeVM>
+@inject IAuthorizationService authorizationService
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+            <th>Salary</th>
+            <th>Title</th>
+            <th>Department</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.FirstName</td>
+                <td>@item.LastName</td>
+                <td>@item.Age</td>
+                <td>@item.Salary</td>
+                <td>@item.Title</td>
+                <td>@item.DepartmentName</td>
+                <td>
+                    @if ((await authorizationService.AuthorizeAsync(User, "Employee.Details")).Succeeded)
+                    {
+                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">Details</a>
+                    }
+                    @if ((await authorizationService.AuthorizeAsync(User, "Employee.Update")).Succeeded)
+                    {
+                        <a asp-action="Update" asp-route-id="@item.Id" class="btn btn-warning">Edit</a>
+                    }
+                    @if ((await authorizationService.AuthorizeAsync(User, "Employee.Delete")).Succeeded)
+                    {
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                    }  
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@if ((await authorizationService.AuthorizeAsync(User, "Employee.Create")).Succeeded)
+{
+    <div>
+        <a asp-action="Create" class="btn btn-primary">Create New</a>
+    </div>
+}
+
+@if ((await authorizationService.AuthorizeAsync(User, "Employee.UploadFile")).Succeeded)
+{
+    <h4>Or</h4>
+    <form asp-action="UploadFile" method="post" enctype="multipart/form-data" class="mb-3">
+        <div class="row">
+            <div class="col-8">
+                <input type="file" name="file" class="form-control" accept=".xls,.xlsx" required />
+            </div>
+            <div class="col-4">
+                <button type="submit" class="btn btn-primary">Upload Excel</button>
+            </div>
+        </div>
+    </form>
+}
